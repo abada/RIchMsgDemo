@@ -1,0 +1,97 @@
+".NavBarShadowContainer":{
+ 	top:0, right:0, left: 0, height: 120,
+	shadow:{
+        shadowRadius	: 10,
+        shadowOpacity	: 0.45,
+        shadowOffset	: {x: 0, y: 5},
+	},
+	zIndex: 9999,
+	touchEnabled: false,
+},
+
+".NavBarShadow":{
+	top: 0, right:0, left:0,
+	height: Alloy.CFG.UI.navBar.height,
+	backgroundColor: Alloy.Globals.Styles.COLOR.titleBar,
+	backgroundGradient:{
+		type:'linear', colors:['#FFffbd38',Alloy.Globals.Styles.COLOR.titleBar],
+		startPoint:{x:0,y:0}, endPoint:{x:0,y:'100%'},
+		backFillStart:false
+	},
+	touchEnabled: false,
+},
+
+".NavBar": {
+	top: 0, right:0, left: 0,
+	height: Alloy.CFG.UI.navBar.height,
+	zIndex: 10000,
+//	backgroundImage: Alloy.Globals.Styles.IMAGE.barImage,
+	backgroundColor: 'transparent',
+	// backgroundGradient:{
+		// type:'linear', colors:['#FFffbd38',Alloy.Globals.Styles.COLOR.titleBar],
+		// startPoint:{x:0,y:0}, endPoint:{x:0,y:'100%'},
+		// backFillStart:false
+	// },
+},
+
+"#myTitle": {
+	height: 44, bottom:0,
+	font : { fontSize: '24dp', fontFamily: 'Melbourne-Bold' },
+	minimumFontSize : '18dp',
+	color : '#A15209',
+ 	shadowColor : 'white',
+	shadowOffset : {x : 0, y : 1},
+	textAlign : 'center',
+	touchEnabled: false,
+	left: 25, right: 15,
+},
+"#myTitle[if=Alloy.Globals.isLangZh]": {
+	font: {fontSize:'20dp', fontFamily: 'Melbourne-Bold'},
+	minimumFontSize : '17dp',
+},
+"#myTitle[if=Alloy.Globals.isLangKo]": {
+	font: {fontSize: '20dp', fontFamily: 'Melbourne-Bold'},
+	minimumFontSize : '16dp',
+},
+"#myTitle[if=Alloy.Globals.isLangJa]": {
+	font: {fontSize: '18dp', fontFamily: 'Melbourne-Bold'},
+	minimumFontSize : '15dp',
+},
+".button_nav":{
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: 44,
+	bottom:0,
+	font:{fontSize: Alloy.CFG.UI.navBar.fontSize, fontFamily: "Melbourne-Bold"},
+	color: '#FFFFFF',
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'transparent',
+	backgroundImage: null,
+	backgroundSelectedImage: null,
+	padding: 0,
+	opacity: 1,
+	activeStyle:{opacity: 0.3},
+	shadowOffset : {x : 0, y : 1},
+	visible: false,
+}
+".button_nav[platform=android]":{
+	backgroundGradient: null,
+}
+".button_nav[platform=ios]":{
+	backgroundGradient: {},
+}
+"#leftNavButton": {
+	left: 0,
+	iconPosition: 'left',
+	spacing: 0,
+	padding: {left: 0, right:50,},
+	icon: '/images/buttons/back.png',
+	iconSize: {width: 27, height: 44,},
+},
+
+"#rightNavButton": {
+	padding: {left: 50, right:10,},
+	right: 0,
+}

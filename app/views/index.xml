@@ -1,0 +1,23 @@
+<Alloy>
+	<Window class="container" onOpen="_onOpen">
+		<!-- <Widget src="me.perkd.navbar" id="navBar"/> -->
+		<View id="header">
+			<Label id="title"></Label>
+			<Button id="addBtn" onClick="_doAdd"></Button>
+		</View>
+		<View id="view" layout="vertical">
+			<Button id="testBtn1" class="testBtn" text="test1" onClick="_doItemClick"></Button>
+			<Button id="testBtn2" class="testBtn" text="test2" onClick="_doItemClick"></Button>
+			<Button id="testBtn3" class="testBtn" text="test3" onClick="_doItemClick"></Button>
+		</View>
+		<!-- <ListView id="testList" onItemclick="_doItemClick">
+			<ListSection id="testSection"></ListSection>
+			<Templates>
+				<ItemTemplate name="template" id="testRow">
+					<Lable bindId="testLab" id="testLab"/>
+					<!-- <ImageView bindId="nextImg" id="nextImg"/> -->
+				<!-- </ItemTemplate>
+			</Templates>
+		</ListView> --> 
+	</Window>
+</Alloy>

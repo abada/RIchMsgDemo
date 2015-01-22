@@ -1,0 +1,4 @@
+<Alloy>
+    <Label id="theLabel" platform="android" onPostlayout="_onPostlayout"/>
+    <Label id="theLabel" platform="ios" />
+</Alloy>

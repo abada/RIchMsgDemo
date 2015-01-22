@@ -1,0 +1,76 @@
+".container": {
+	backgroundColor: "#FFFFFF"
+},
+
+"#header": {
+	layout: 'horizontal',
+	top: 0,
+	height:30
+},
+
+"#backBtn": {
+	backgroundColor: '#F0F0F0',
+	backgroundImage:'/images/backbtn.png',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	width:5,
+	left:5,
+	right: 10
+},
+
+"#title": {
+	center:true,
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+},
+
+"#addBtn": {
+	backgroundColor: '#ABCD00',
+	backgroundImage:'/images/addbtn.png',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	width:5,
+	left:10,
+	right: 5
+},
+
+"#newRichName": {
+	hintText: 'Input Name',
+	top: 30,
+	width: '80%',
+	height: 20
+},
+
+".btnBar": {
+	top:20
+},
+".lable": {
+	backgroundColor: '#F0F0F0',
+	color: '#000000',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	left: 10,
+	right: 30,
+},
+
+"#nextImg": {
+	backgroundImage: '/images/next.png',
+	right:10
+},
+
+"#renderTest": {
+	backgroundColor: '#37A7F8',
+	center: true
+}

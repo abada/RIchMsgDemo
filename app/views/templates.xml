@@ -1,0 +1,25 @@
+<Alloy>
+	<Window class="container" >
+		<!-- <Widget src="me.perkd.navbar" id="navBar"/> -->
+		<View id="header">
+			<Button id="backBtn" onClick="_doBack"></Button>
+			<Label id="title"></Label>
+			<Button id="saveBtn" onClick="_doSave"></Button>
+		</View>
+		<View id="view" layout="vertical">
+			<Button id="tempBtn1" class="tempBtn" title="tempalte1" onClick="_doTempClick"></Button>
+			<Button id="tempBtn2" class="tempBtn" title="tempalte2" onClick="_doTempClick"></Button>
+			<Button id="tempBtn3" class="tempBtn" title="tempalte3" onClick="_doTempClick"></Button>
+		</View>
+		<!-- <ListView id="testList" onItemclick="_doItemClick">
+			<ListSection id="testSection"></ListSection>
+			<Templates>
+				<ItemTemplate name="template" id="testRow">
+					<Button bindId="testBtn" id="testBtn"></Button>
+					<ImageView bindId="nextImg" id="nextImg"></ImageView>
+				</ItemTemplate>
+			</Templates>
+		</ListView> -->
+
+	</Window>
+</Alloy>

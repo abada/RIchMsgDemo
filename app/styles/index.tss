@@ -1,0 +1,86 @@
+".container": {
+	backgroundColor: "#FFFFFF",
+	layout: "vertical"
+},
+
+"#header": {
+	layout: 'horizontal',
+	top: 30,
+	height:'10%',
+	bottom:20
+},
+
+"#title": {
+	left:60,
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+},
+
+"#addBtn": {
+	borderRadius: 5,
+	backgroundColor: '#ABCD00',
+	backgroundImage:'/images/addbtn@2x.png',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	left: 30,
+	right: 5,
+	width: 30,
+	height: 30
+},
+
+// "#view": {
+	// left:10,
+	// right:10,
+	// bottom:10,
+	// height:'80%'
+// },
+".testBtn":{
+	borderRadius: 5,
+	// backgroundImage:'/images/next.png',
+	backgroundColor: '#F0F0F0',
+	color: 'black',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	left: 10,
+	right: 10,
+	top: 5,
+	bottom: 5,
+	height:50
+}
+
+
+
+
+
+// "#testList":{
+	// top: 20,
+	// width: "100%"
+// },
+// "#testRow": {
+	// layout: 'horizontal',
+	// width: "80%",
+	// height: 100
+// },
+// 
+// "#testLab": {
+	// // backgroundColor: '#F0F0F0',
+	// color: '#000000',
+	// font: {
+		// fontFamily: 'Arial',
+		// fontSize: '20dp',
+		// fontWeight: 'bold'
+	// },
+	// left: 10,
+	// right: 10,
+	// top: 5,
+	// bottom: 10
+// }

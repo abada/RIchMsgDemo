@@ -1,0 +1,17 @@
+"View": {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE
+}
+
+"#center": {
+    width : "100%",
+    height : "100%",
+    touchEnabled: false
+}
+
+"Label[platform=android]": {
+    width : "100%",
+    height : "100%",
+    touchEnabled: false,
+    textAlign: "center",
+}

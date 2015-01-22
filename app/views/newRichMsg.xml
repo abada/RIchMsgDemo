@@ -1,0 +1,23 @@
+<Alloy>
+	<Window class="container" >
+		<!-- <Widget src="me.perkd.navbar" id="navBar"/> -->
+		<View id="header">
+			<Button id="backBtn" onClick="_doBack"></Button>
+			<Label id="title"></Label>
+			<Button id="saveBtn" onClick="_doSave"></Button>
+		</View>
+        <View>
+        	<TextField id="newRichName"></TextField>
+        	<ButtonBar class="btnBar">
+        		<Label id="temLab" class="lable"></Label>
+        		<Images id="nextImg"></Images>
+        	</ButtonBar>
+        	<ButtonBar class="btnBar">
+        		<Label id="parmLab" class="lable"></Label>
+        		<Images id="nextImg"></Images>
+        	</ButtonBar>
+        	<Button id="renderTest"></Button>
+        
+        </View>
+	</Window>
+</Alloy>

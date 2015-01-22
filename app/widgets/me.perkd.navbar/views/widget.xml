@@ -1,0 +1,10 @@
+<Alloy>
+	<View class='NavBarShadowContainer' id="bkgd">
+		<View class='NavBarShadow'/>
+	</View>
+	<View class='NavBar' id='titleBar' bubbleParent="false">
+		<Widget src='nl.fokkezb.button' title='     ' id='leftNavButton' class='button_nav'/>
+		<Widget src='nl.fokkezb.button' title=' ' id='rightNavButton' class='button_nav'/>
+		<Widget src="me.perkd.label" id="myTitle"/>
+	</View>
+</Alloy>

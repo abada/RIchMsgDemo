@@ -1,0 +1,22 @@
+".container": {
+	backgroundColor: "#FFFFFF"
+},
+
+"#header": {
+	layout: 'horizontal',
+	top: 0,
+	height:30
+},
+
+"#backBtn": {
+	backgroundColor: '#F0F0F0',
+	backgroundImage:'/images/backbtn.png',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	width:5,
+	left:5,
+	right: 10
+}

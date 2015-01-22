@@ -1,0 +1,70 @@
+".container": {
+	backgroundColor: "#FFFFFF",
+	layout: "vertical"
+},
+
+"#header": {
+	layout: 'horizontal',
+	top: 0,
+	height:30
+},
+
+"#backBtn": {
+	backgroundColor: '#F0F0F0',
+	backgroundImage:'/images/back.png',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	left: 5,
+	right: 30,
+	width: 30,
+	height: 30
+},
+
+"#title": {
+	left:60,
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+},
+
+"#saveBtn": {
+	backgroundColor: '#F0F0F0',
+	font: {
+		color: 'black',
+		fontFamily: 'Arial',
+		fontSize: '10dp',
+		fontWeight: 'bold'
+	},
+	left: 80,
+	right: 5,
+	width: 60,
+	height: 30
+},
+
+"#saveBtn": {
+	backgroundColor: '#ABCD00',
+	backgroundImage:'/images/addbtn.png',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	width:5,
+	left:10,
+	right: 5
+},
+
+"#newContent": {
+	hintText: 'html or url',
+	borderRadius: 5,
+	backgroundColor: '#F0F0F0',
+	top: 10,
+	left: 10,
+	right: 10,
+	height: '50%'
+}
