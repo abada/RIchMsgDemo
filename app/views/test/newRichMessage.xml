@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="me" class="container" onOpen="_onOpen" onClose="_onClose">
+		<!-- <Widget src="me.perkd.navbar" id="navBar"/> -->
+		<View id="header">
+			<Button id="backBtn" onClick="_doBack"></Button>
+			<Label id="title"></Label>
+			<Button id="saveBtn" onClick="_doSave"></Button>
+		</View>
+		<TextField id="newRichName"></TextField>
+        <View id="content">
+			<Button id="tempBtn" class="testBtn" title="Template" onClick="_doTempClick"></Button>
+			<Button id="paramBtn" class="testBtn" title="Parameter" onClick="_doParamClick"></Button>
+        	<Button id="renderTest" title="test"></Button>
+        </View>
+	</Window>
+</Alloy>

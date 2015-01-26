@@ -1,0 +1,88 @@
+".container": {
+	backgroundColor: "#FFFFFF",
+	layout: "vertical"
+},
+"#header": {
+	layout: 'horizontal',
+	top: 30,
+	height:'10%',
+	bottom:20
+},
+
+"#backBtn": {
+	backgroundColor: '#F0F0F0',
+	image:'/images/back.png',
+	left: 5,
+	right: 30,
+	width: '40dp',
+	height: '40dp'
+},
+
+"#title": {
+	left:60,
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+},
+
+"#saveBtn": {
+	backgroundColor: '#F0F0F0',
+	font: {
+		color: 'black',
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	left: 50,
+	right: 5,
+	width: '60dp',
+	height: '30dp'
+},
+
+"#testName": {
+	borderRadius: 5,
+	hintText: 'Input Name',
+	backgroundColor: '#F0F0F0',
+	top: 10,
+	left: 10,
+	right: 10,
+	height: 40
+},
+
+
+"#content": {
+	layout: 'vertical',
+	top: 30,
+	bottom:20
+},
+
+
+".testBtn":{
+	borderRadius: 5,
+	// backgroundImage:'/images/next.png',
+	backgroundColor: '#F5F5F5',
+	color: 'black',
+	textAlign: 'left',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	left: 10,
+	right: 10,
+	top: 20,
+	bottom: 5,
+	height:50
+},
+
+"#renderTest": {
+	borderRadius: 5,
+	backgroundColor: '#37A7F8',
+	center: true,
+	top: 50,
+	width:70,
+	height: 50,
+	color: 'black'
+}

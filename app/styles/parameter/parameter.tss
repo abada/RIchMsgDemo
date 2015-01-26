@@ -1,0 +1,52 @@
+".container": {
+	backgroundColor: "#FFFFFF",
+	layout: "vertical"
+},
+"#header": {
+	layout: 'horizontal',
+	top: 30,
+	height:'10%',
+	bottom:20
+},
+
+"#backBtn": {
+	backgroundColor: '#F0F0F0',
+	image:'/images/back.png',
+	left: 5,
+	width: '40dp',
+	height: '40dp'
+},
+
+"#title": {
+	left:60,
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+},
+
+"#saveBtn": {
+	backgroundColor: '#F0F0F0',
+	font: {
+		color: 'black',
+		fontFamily: 'Arial',
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	left:50,
+	right: 5,
+	width: '60dp',
+	height: '40dp'
+},
+
+"#newContent": {
+	textAlign:'left',
+	hintText: 'html or url',
+	borderRadius: 5,
+	backgroundColor: '#F0F0F0',
+	top: 10,
+	left: 10,
+	right: 10,
+	height: '70%'
+}

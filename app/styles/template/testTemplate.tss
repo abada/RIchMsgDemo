@@ -10,6 +10,14 @@
 	bottom:20
 },
 
+"#backBtn": {
+	backgroundColor: '#F0F0F0',
+	image:'/images/back.png',
+	left: 5,
+    width: '40dp',
+	height: '40dp'
+},
+
 "#title": {
 	left:50,
 	font: {
@@ -23,18 +31,11 @@
 	borderRadius: 5,
 	backgroundColor: '#ABCD00',
 	image:'/images/addbtn@2x.png',
-	left: 40,
+	left: 50,
 	right: 5,
 	width: '40dp',
 	height: '40dp'
 },
-
-// "#testTable":{
-	// // borderRadius: 5,
-	// top: 10,
-	// // left: 10,
-	// // right: 10
-// },
 
 "#testList":{
 	borderRadius: 5,
@@ -44,7 +45,6 @@
 },
 
 "#testRow": {
-	layout: 'horizontal',
 	backgroundColor: '#F0F0F0',
 	color: 'black',
 	font: {
@@ -55,12 +55,11 @@
 	height:50
 },
 
-"#testBtn": {
-	left: 10,
+"#tempBtn": {
+	left: 10
 },
 
 "#nextImg": {
 	image: "/images/next.png",
 	right:10,
 }
-

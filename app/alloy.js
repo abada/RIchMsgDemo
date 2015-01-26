@@ -10,3 +10,20 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
+
+var App = Alloy.Globals;
+
+var Router = require('router');
+_.extend(Router.prototype, {
+	routes : {
+		
+		'index/:rid/test' : 'test/test',
+		'test/:gid/testTemplate' : 'template/testTemplate',
+		'testTemplate/:gid/temp' : 'template/temp',
+		'test/:properties/parameter' : 'parameter/parameter',
+		'testTemplate/:gid/newTemplate' : 'template/newTemplate',
+		'test/:gid/template/:properties' : 'test/newRichMessage',
+		'newTemplate/:fid/templateGroup' : 'template/templateGroup'
+	},
+});
+App.router = new Router(); 

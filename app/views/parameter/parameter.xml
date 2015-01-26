@@ -1,0 +1,11 @@
+<Alloy>
+	<Window  id="me" class="container">
+		<!-- <Widget src="me.perkd.navbar" id="navBar"/> -->
+		<View id="header">
+			<Button id="backBtn" onClick="_doBack"></Button>
+			<Label id="title"></Label>
+			<Button id="saveBtn" onClick="_doSave"></Button>
+		</View>
+        <TextArea id="newContent"></TextArea>
+	</Window>
+</Alloy>

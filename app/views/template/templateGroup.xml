@@ -1,17 +1,17 @@
 <Alloy>
-	<Window class="container" onOpen="_onOpen" onClose="_onClose">
+	<Window id="me" class="container" onOpen="_onOpen" onClose="_onClose">
 		<!-- <Widget src="me.perkd.navbar" id="navBar"/> -->
 		<View id="header">
+			<Button id="backBtn" onClick="_doBack"></Button>
 			<Label id="title"></Label>
 			<Button id="addBtn" onClick="_doAdd"></Button>
 		</View>
-		<!-- <TableView id="testTable"></TableView> -->
 		<ListView id="testList" onItemclick="_doItemClick">
 			<ListSection id="testSection"></ListSection>
 			<Templates>
 				<ItemTemplate name="template" id="testRow">
-					<Button bindId="testBtn" id="testBtn"/>
-					<ImageView bindId="nextImg" id="nextImg" />
+					<Button bindId="tempBtn" id="tempBtn"></Button>
+					<ImageView bindId="nextImg" id="nextImg"></ImageView>
 				</ItemTemplate>
 			</Templates>
 		</ListView>
