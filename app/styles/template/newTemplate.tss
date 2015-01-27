@@ -27,7 +27,6 @@
 	}
 },
 
-
 "#saveBtn": {
 	backgroundColor: '#F0F0F0',
 	font: {
@@ -44,7 +43,7 @@
 
 "#newTemName": {
 	borderRadius: 5,
-	hintText: 'Input Name',
+	hintText: 'Input templategroupName',
 	backgroundColor: '#F0F0F0',
 	top: 10,
 	left: 10,
@@ -54,7 +53,7 @@
 
 "#newFileName": {
 	borderRadius: 5,
-	hintText: 'Input Name',
+	hintText: 'Input templateFileName',
 	backgroundColor: '#F0F0F0',
 	top: 10,
 	left: 10,

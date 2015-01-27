@@ -62,17 +62,8 @@ function _doItemClick(e) {
 
 function _doAdd(e) {
 	
-	// var controller = Alloy.createController("test/newRichMessage");
-//     
-    // controller.getView().open();
-
-    var properties = "undefine";
-    var tempGroupId = "undefine";
-    
-	App.router.navigate("test/" + tempGroupId + "/template/" + properties, {
-			navGroup : self.navGroup,
-			tabGroup : self.tabGroup
-		});
+	var controller = Alloy.createController("test/newRichMessage");
+    controller.getView().open();
 }
 
 

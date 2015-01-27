@@ -3,7 +3,8 @@ exports.definition = {
 		columns: {
 			"id": 'INTEGER PRIMARY KEY AUTOINCREMENT',
 		    "templategroupid": "text",
-		    "templatefileid": "text"
+		    "templatefileid": "text",
+		    "properties": "text"
 		},
 		adapter: {
 			type: "sql",

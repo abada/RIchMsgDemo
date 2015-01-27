@@ -39,6 +39,8 @@ Router.prototype.initialize = function() {
 //     });
 //
 Router.prototype.route = function(route, name, callback) {
+	Ti.API.warn("33333333333333333",route);
+	Ti.API.warn("33333333333333333",name);
 	if (!_.isRegExp(route))
 		route = this._routeToRegExp(route);
 	if (_.isFunction(name)) {
@@ -61,6 +63,8 @@ Router.prototype.route = function(route, name, callback) {
 			if (callback) {
 
 				callback.apply(router, args);
+				
+				Ti.API.error('##################');
 
 			} else {
 				Ti.API.warn('route: ' + name + ' (' + JSON.stringify(args) + ')');
@@ -106,8 +110,8 @@ Router.prototype.route = function(route, name, callback) {
 					}
 
 				} catch(err) {
-
 					
+                    Ti.API.error("test/newRichMessage -->>>> ",err);
 				}
 			}
 

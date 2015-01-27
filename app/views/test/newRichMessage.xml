@@ -10,7 +10,7 @@
         <View id="content">
 			<Button id="tempBtn" class="testBtn" title="Template" onClick="_doTempClick"></Button>
 			<Button id="paramBtn" class="testBtn" title="Parameter" onClick="_doParamClick"></Button>
-        	<Button id="renderTest" title="test"></Button>
+        	<Button id="renderTest" title="test" onClick="_doRender"></Button>
         </View>
 	</Window>
 </Alloy>

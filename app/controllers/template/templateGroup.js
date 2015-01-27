@@ -7,6 +7,8 @@ var templateFiles = Alloy.Collections.instance('templateFile');
 
 templateFiles && templateFiles.fetch();
 
+Ti.API.error(" >>> try to add mail info at maillist", templateFiles.toJSON());
+
 var templateGroups = Alloy.Collections.instance('templateGroup');
 
 templateGroups && templateGroups.fetch();
@@ -34,7 +36,7 @@ function draw() {
 
 	var items = [];
 
-	_.each(templateFiles.where({isdelete : 0}), function(templateFile, index) {
+	_.each(templateFiles.where({templatefileid : self.DATA.tempFileID}), function(templateFile, index) {
 
 		items.push({template : 'template',tempBtn : {title : templateFile.get("templatefileid")}
 		});
@@ -83,16 +85,25 @@ function _doAdd(e) {
 
 function _doBack(e) {
 
-	var properties = " ";
-
-	_.each(templateGroups.where({
+    Ti.API.error(" ########################", self.DATA.tempFileID);
+   
+	if (_.size(templateGroups.where({
 		templatefileid : self.DATA.tempFileID
-	}), function(templateGroup, index) {
+	})) > 0) {
+		_.each(templateGroups.where({
+			templatefileid : self.DATA.tempFileID
+		}), function(templateGroup, index) {
 
-		App.router.navigate("test/" + templateGroup.get("templategroupid") + "/template/" + properties, {
-			navGroup : self.navGroup,
-			tabGroup : self.tabGroup
+			App.router.navigate("test/" + templateGroup.get("templategroupid") + "/template/" + templateGroup.get("properties"), {
+				navGroup : self.navGroup,
+				tabGroup : self.tabGroup
+			});
 		});
-	});
+	}else{
+		var controller = Alloy.createController("test/newRichMessage");
+
+	controller.getView().open();
+	}
+
 }
 

@@ -1,6 +1,6 @@
 var _args = arguments[0] || {};
 
-Ti.API.error(" >>> @@@@@@@@@@@@@@@@@@", _args);
+Ti.API.error(">>>> parameter --->>>> ", _args);
 
 var self ={
 	// ===== define events here =====
@@ -11,13 +11,14 @@ var self ={
 	// ===== DATA from router =====
 	DATA : {
 		properties : _args.params[0],
+		tempGroupID : _args.data.templateGroupID
 		// demoType : _args.data.demoType
 	},
 	navGroup : _args.navGroup || undefined,
 	tabGroup : _args.tabGroup || undefined,
 };
 
-Ti.API.error(" >>> @@@@@@@@@@@@@@@@@@", self.DATA.properties);
+Ti.API.error(">>>> parameter -->>>>> ", self.DATA.properties);
 
 $.title.text = "Parameter";
 
@@ -32,9 +33,8 @@ function close() {
 function _doSave(e){
 	
 	var properties = $.newContent.value;
-    var tempGroupId = " ";
     
-	App.router.navigate("test/" + tempGroupId + "/template/" + properties, {
+	App.router.navigate("test/" + self.DATA.tempGroupID + "/template/" + properties, {
 			navGroup : self.navGroup,
 			tabGroup : self.tabGroup
 		});

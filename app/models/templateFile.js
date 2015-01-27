@@ -3,7 +3,7 @@ exports.definition = {
 		columns: {
 			"id": 'INTEGER PRIMARY KEY AUTOINCREMENT',
 		    "templatefileid": "text",
-		    "templatecontent": "text",
+		    "filepath": "text",
 		    "isdelete": "boolean",
 		    "ismain": "boolean"
 		},
