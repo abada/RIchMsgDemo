@@ -1,5 +1,5 @@
 <Alloy>
-	<Window  id="me"  class="container">
+	<Window  id="me"  class="container" onOpen="_onOpen" onClose="_onClose">
 		<View id="header">
 			<Button id="backBtn" onClick="_doBack"></Button>
 		</View>

@@ -2,6 +2,10 @@ var _args = arguments[0] || {};
 
 Ti.API.error(">>>> parameter --->>>> ", _args);
 
+var templateGroups = Alloy.Collections.instance('templateGroup');
+
+templateGroups && templateGroups.fetch();
+
 var self ={
 	// ===== define events here =====
 	EVENT : {
@@ -33,7 +37,16 @@ function close() {
 function _doSave(e){
 	
 	var properties = $.newContent.value;
-    
+
+	_.each(templateGroups.where({
+		templategroupid : self.DATA.tempGroupID
+	}), function(templateGroup, index) {
+		templateGroup.set({
+			properties : properties,
+		});
+		templateGroup.save();
+	}); 
+
 	App.router.navigate("test/" + self.DATA.tempGroupID + "/template/" + properties, {
 			navGroup : self.navGroup,
 			tabGroup : self.tabGroup

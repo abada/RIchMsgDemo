@@ -6,9 +6,9 @@ $.title.text = "New Rich Message";
 
 $.saveBtn.title = "Save";
 
-var richMessage = Alloy.Collections.instance('richMessage');
+var templateGroups = Alloy.Collections.instance('templateGroup');
 
-richMessage && richMessage.fetch();
+templateGroups && templateGroups.fetch();
 
 var self = {
 	// ===== define events here =====
@@ -83,24 +83,31 @@ function _doParamClick(e) {
 	}); 
 }
 
-
 function _doRender(e) {
 
-    var tempFileID = _args.data.templateFileID;
-	var tempGroupID = _args.params[0];
-	var argsStr = _args.params[1];
-	var argsJson = JSON.parse(argsStr);
-	
-	// App.router.navigate("test/" + tempGroupID + "/render", {
-		// data : {
-			// templateFileID : tempFileID
-		// },
-		// navGroup : self.navGroup,
-		// tabGroup : self.tabGroup
-	// }); 
-	var controller = Alloy.createController("test/render", argsJson);
-	controller.getView().open();
+    var tempGroupID = _args.params[0];
+    
+    // var argsStr = _args.params[1];
+    // var argsJson = JSON.parse(argsStr);
+    
+	_.each(templateGroups.where({
+		templategroupid : tempGroupID
+	}), function(templateGroup, index) {
+		
+		var tempFileID = templateGroup.get("templatefileid");
 
+		App.router.navigate("test/" + tempGroupID + "/render", {
+			data : {
+				templateFileID : tempFileID
+			},
+			navGroup : self.navGroup,
+			tabGroup : self.tabGroup
+		});
+	}); 
+
+    
+	// var controller = Alloy.createController("test/render", argsJson);
+	// controller.getView().open();
 }
 
 
