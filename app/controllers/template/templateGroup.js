@@ -83,10 +83,11 @@ function _doAdd(e) {
 }
 
 
+
 function _doBack(e) {
 
-    Ti.API.error(" ########################", self.DATA.tempFileID);
-   
+	Ti.API.error(" ########################", self.DATA.tempFileID);
+
 	if (_.size(templateGroups.where({
 		templatefileid : self.DATA.tempFileID
 	})) > 0) {
@@ -95,15 +96,21 @@ function _doBack(e) {
 		}), function(templateGroup, index) {
 
 			App.router.navigate("test/" + templateGroup.get("templategroupid") + "/template/" + templateGroup.get("properties"), {
+				data : {
+					templateFileID : self.DATA.tempFileID
+				},
 				navGroup : self.navGroup,
 				tabGroup : self.tabGroup
 			});
 		});
-	}else{
+	} else {
 		var controller = Alloy.createController("test/newRichMessage");
 
-	controller.getView().open();
+		controller.getView().open();
+		
+		$.me.close();
 	}
 
 }
+
 

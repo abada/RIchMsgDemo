@@ -5,8 +5,7 @@
 "#header": {
 	layout: 'horizontal',
 	top: 30,
-	height:'10%',
-	bottom:20
+	height:'40dp'
 },
 
 "#backBtn": {

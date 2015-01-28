@@ -5,8 +5,7 @@
 "#header": {
 	layout: 'horizontal',
 	top: 30,
-	height:'10%',
-	bottom:20
+	height:'40dp'
 },
 
 "#backBtn": {
@@ -45,7 +44,7 @@
 	borderRadius: 5,
 	hintText: 'Input Name',
 	backgroundColor: '#F0F0F0',
-	top: 10,
+	top: 20,
 	left: 10,
 	right: 10,
 	height: 40
@@ -53,7 +52,7 @@
 
 "#content": {
 	layout: 'vertical',
-	top: 30,
+	top: 20,
 	bottom:20
 },
 

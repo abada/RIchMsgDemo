@@ -45,8 +45,9 @@ function draw() {
 
 function _doItemClick(e) {
 
+    var index = parseInt(e.itemIndex + 1);
 	_.each(richMessages.where({
-		isdelete : 0
+		id : index
 	}), function(richMessage, index) {
 
 		App.router.navigate("index/" + richMessage.get("richid") + "/test", {

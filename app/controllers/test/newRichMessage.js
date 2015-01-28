@@ -83,30 +83,24 @@ function _doParamClick(e) {
 	}); 
 }
 
-function _doRender(e){
 
-var argsStr = _args.params[1];
-var argsJson = JSON.parse(argsStr);
+function _doRender(e) {
 
-var path = Ti.Filesystem.getFile(Ti.Filesystem.getApplicationCacheDirectory(),'tempFile/file.html');
-Ti.API.info(">>>> newRichMessage --->>>> ", argsJson);
-Ti.API.info(">>>> newRichMessage --->>>> ", typeof argsJson);
-Ti.API.info(">>>> newRichMessage --->>>> ", typeof path);
+    var tempFileID = _args.data.templateFileID;
+	var tempGroupID = _args.params[0];
+	var argsStr = _args.params[1];
+	var argsJson = JSON.parse(argsStr);
+	
+	// App.router.navigate("test/" + tempGroupID + "/render", {
+		// data : {
+			// templateFileID : tempFileID
+		// },
+		// navGroup : self.navGroup,
+		// tabGroup : self.tabGroup
+	// }); 
+	var controller = Alloy.createController("test/render", argsJson);
+	controller.getView().open();
 
- App.router.navigate("test/" + argsJson + "/render/" + path, {
-			navGroup : self.navGroup,
-			tabGroup : self.tabGroup
-		});
-// // var tempFile = Ti.Filesystem.getFile(path.nativePath, 'file.html');
-// Ti.API.info(">>>> newRichMessage --->>>> ", path);
-// var ejs = require("ejs");
-//     
-// argsJson.filename = path.resolve();
-// 
-// var ret = ejs.render(path.read().getText(), argsJson);  
-// 
-// Ti.API.info("retretretretretretretret",ret);
-// var webview = Ti.UI.createWebView();
-// webview.setHtml(ret);
 }
+
 

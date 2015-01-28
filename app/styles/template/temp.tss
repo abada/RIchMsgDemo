@@ -5,8 +5,7 @@
 "#header": {
 	layout: 'horizontal',
 	top: 30,
-	height:'10%',
-	bottom:20
+	height:'40dp'
 },
 
 "#backBtn": {
@@ -18,7 +17,7 @@
 },
 
 "#title": {
-	left:30,
+	left:60,
 	font: {
 		fontFamily: 'Arial',
 		fontSize: '20dp',
@@ -34,17 +33,17 @@
 		fontSize: '20dp',
 		fontWeight: 'bold'
 	},
-	left:40,
+	left:50,
 	right: 5,
 	width: '60dp',
 	height: '30dp'
 },
 
-"#templateFileName": {
+"#templateGroupName": {
 	borderRadius: 5,
 	hintText: 'Input Name',
 	backgroundColor: '#F0F0F0',
-	top: 10,
+	top: 20,
 	left: 10,
 	right: 10,
 	height: 40

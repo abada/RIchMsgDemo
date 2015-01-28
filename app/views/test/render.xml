@@ -1,6 +1,8 @@
 <Alloy>
-	<Window  id="me"  class="container" onOpen="_onOpen" onClose="_onClose">
+	<Window  id="me"  class="container">
+		<View id="header">
+			<Button id="backBtn" onClick="_doBack"></Button>
+		</View>
 	    <WebView id="webview"></WebView>
-	    <Button onClick="_onBack" id="back">Back</Button>>
 	</Window>
 </Alloy>

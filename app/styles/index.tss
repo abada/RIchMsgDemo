@@ -6,8 +6,7 @@
 "#header": {
 	layout: 'horizontal',
 	top: 30,
-	height:'10%',
-	bottom:20
+	height:'40dp'
 },
 
 "#title": {
@@ -38,7 +37,7 @@
 
 "#testList":{
 	borderRadius: 5,
-	top: 10,
+	top: 20,
 	left: 10,
 	right: 10
 },

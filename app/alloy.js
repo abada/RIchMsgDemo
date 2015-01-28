@@ -23,7 +23,7 @@ _.extend(Router.prototype, {
 		'testTemplate/:gid/newTemplate' : 'template/newTemplate',
 		'test/:gid/template/:properties' : 'test/newRichMessage',
 		'newTemplate/:fid/templateGroup' : 'template/templateGroup',
-		'test/:properties/render/:filePath' : 'test/render',
+		'test/:properties/render' : 'test/render'
 	},
 });
 App.router = new Router(); 

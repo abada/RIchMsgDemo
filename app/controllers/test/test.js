@@ -48,12 +48,6 @@ function _doTempClick(e) {
 function _doParamClick(e) {
 
 		App.router.navigate("test/" + self.DATA.testData.properties + "/parameter", {
-			data : {
-				// properties:self.DATA.testData.properties
-				// testData : richMessage.toJSON(),
-				// cardID : self.DATA.cardID
-				// demoType : ('5A0582' == self.DATA.cardData.masterID || '5A0492' == self.DATA.cardData.masterID) ? 'tbl' : 'tbs'
-			},
 			navGroup : self.navGroup,
 			tabGroup : self.tabGroup
 		});
@@ -82,22 +76,19 @@ function _doBack(e){
 
 function _doRender(){
 	
-   var webview = Alloy.createController('test/render').getView();
-
-
-	var path = Ti.Filesystem.getFile(Ti.Filesystem.getResourcesDirectory(), '/templates/body.html');
-	// var root = Ti.Filesystem.getApplicationCacheDirectory();
-	// var path = Ti.Filesystem.getFile(Ti.Filesystem.getApplicationCacheDirectory() , 'V3FKv6h/10/body.html');
-
-	var ejs = require("ejs");
-
-	args.filename = path.resolve();
-
-	var ret = ejs.render(path.read().getText(), args);
-
-	Ti.API.info("retretretretretretretret", ret);
+   var argsStr = self.DATA.testData.properties;
+   var argsJson = JSON.parse(argsStr);
 	
-	webview.setHtml(ret); 
+	// App.router.navigate("test/" + tempGroupID + "/render", {
+		// data : {
+			// templateFileID : tempFileID
+		// },
+		// navGroup : self.navGroup,
+		// tabGroup : self.tabGroup
+	// }); 
+	var controller = Alloy.createController("test/render", argsJson);
+	controller.getView().open();
+
 
 }
 
